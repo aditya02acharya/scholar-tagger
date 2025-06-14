@@ -17,6 +17,10 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+dependencies = [
+    "kaggle>=1.7.4.5",
+    "lightning>=2.5.1.post0",
+]
 
 [project.urls]
 Homepage = "https://aditya02acharya.github.io/scholar-tagger/"
@@ -28,11 +32,11 @@ dev = [
     "pytest>=7.2.0",
     "pre-commit>=2.20.0",
     "tox-uv>=1.11.3",
-    
+
     "mypy>=0.991",
     "pytest-cov>=4.0.0",
     "ruff>=0.11.5",
-    
+
 ]
 
 [build-system]
@@ -112,4 +116,3 @@ skip_empty = true
 [tool.coverage.run]
 branch = true
 source = ["src"]
-
